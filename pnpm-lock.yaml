@@ -110,8 +110,8 @@ importers:
         specifier: ^2.0.3
         version: 2.0.3
       pkg-types:
-        specifier: ^1.3.1
-        version: 1.3.1
+        specifier: ^2.0.0
+        version: 2.0.0
       remark-mdc:
         specifier: latest
         version: 3.5.3
@@ -4947,6 +4947,7 @@ packages:
 
   libsql@0.4.7:
     resolution: {integrity: sha512-T9eIRCs6b0J1SHKYIvD8+KCJMcWZ900iZyxdnSCdqxN12Z1ijzT+jY5nrk72Jw4B0HGzms2NgpryArlJqvc3Lw==}
+    cpu: [x64, arm64, wasm32]
     os: [darwin, linux, win32]
 
   lighthouse-logger@2.0.1:
@@ -5871,6 +5872,9 @@ packages:
 
   pkg-types@1.3.1:
     resolution: {integrity: sha512-/Jm5M4RvtBFVkKWRu2BLUTNP8/M2a+UwuAX+ae4770q1qVGtfjG+WTCupoZixokjmHiry8uI+dlY8KXYV5HVVQ==}
+
+  pkg-types@2.0.0:
+    resolution: {integrity: sha512-W+831FxieJW1CIAh3JMmHaMhK/SiSeyCqbSWqLjjvbjaPDDY0cRkspIfOx4vLkFNgfxnzSxxGFUiMHMm6QpvYA==}
 
   playwright-core@1.50.1:
     resolution: {integrity: sha512-ra9fsNWayuYumt+NiM069M6OkcRb1FZSK8bgi66AtpFoWkg2+y0bJSNmkFrWhMbEBbVKC/EruAHH3g0zmtwGmQ==}
@@ -15452,6 +15456,11 @@ snapshots:
     dependencies:
       confbox: 0.1.8
       mlly: 1.7.4
+      pathe: 2.0.3
+
+  pkg-types@2.0.0:
+    dependencies:
+      confbox: 0.1.8
       pathe: 2.0.3
 
   playwright-core@1.50.1: {}
